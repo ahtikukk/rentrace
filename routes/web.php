@@ -11,6 +11,23 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
+// Route::get('/', function () {
+//     return redirect('/booking');
+// });
+
+Route::get('/', 'BookingController@index');
+
+Route::get('/booking', function () {
+    return view('booking');
 });
+
+Route::get('/result', function () {
+    return view('result');
+});
+Route::get('/contact', function () {
+    return view('contact');
+});
+Route::get('/edit', function () {
+    return view('edit');
+});
+
