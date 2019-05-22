@@ -61,6 +61,25 @@
                 </tr>
             </tbody>
         </table>
+        <form>
+            <div class="form-group">
+                <label>Time</label>
+                <input type="email" class="form-control" placeholder="Enter time">
+            </div>
+            <div class="form-group">
+                <label>Name</label>
+                <input type="password" class="form-control" placeholder="Name">
+            </div>
+            <div class="form-group">
+                <label>Car</label>
+                <input type="password" class="form-control" placeholder="Car">
+            </div>
+            <div class="form-group">
+                <label>Date</label>
+                <input type="password" class="form-control" placeholder="Date">
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
     </div>
 
 @endsection

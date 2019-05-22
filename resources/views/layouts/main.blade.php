@@ -170,7 +170,7 @@
 
               @yield('content')
               
-              <footer class="footer bg-secondary text-center fixed-bottom container mb-2">
+              <footer class="footer bg-secondary text-center container my-3">
                   <p>&copy Ahti 2019</p>
               </footer> <!--FOOTER END-->
               
