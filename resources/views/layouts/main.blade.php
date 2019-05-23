@@ -96,50 +96,8 @@
                       <div class="col-4 d-flex justify-content-between align-items-center">
                       <!-- Button to Open the Modal -->
                       Not member yet?
-                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal1">Register</button>
-                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">Login</button>
-              
-                        <!-- The Modal -->
-                        <div class="modal" id="myModal">
-                          <div class="modal-dialog modal-lg">
-                            <div class="modal-content">
-                              <!--Modal Header-->
-                              <div class="modal-header">
-                                
-                              </div>  
-                              <!--
-                              <h1>Login</h1>
-                                <form action="" method="post">
-                                  Login: <input type="text" name="login"><br>
-                                  Password: <input type="password" name="pass"><br>
-                                  <input type="submit" value="Logi sisse">
-                                </form>
-                                -->
-                              <!-- Modal body -->
-                              <div class="modal-body">
-                                <div class="d-flex justify-content-center ">
-                                  <form action="" method="post" class="form-signin">
-                                    <label for="inputEmail" class="sr-only">Email address</label>
-                                    <input type="email" name="login" id="inputEmail" class="form-control" placeholder="" required autofocus><br>
-                                    <label for="inputPassword" class="sr-only">Password</label>
-                                    <input type="password" name="pass" id="inputPassword" class="form-control" placeholder="" required><br>
-                                    <div class="checkbox mb-3">
-                                      <label>
-                                        <input type="checkbox" value="remember-me"> Remember me
-                                      </label>
-                                    </div>
-                                    <button class="btn btn-lg btn-primary btn-block" type="submit">Login</button>
-                                  </form>
-                                </div>
-                              </div>
-                              <!-- Modal Footer -->
-                              <div class="modal-footer">
-                                <button type="button" class="close" data-dismiss="modal">&times;</button>
-                              </div>
-                                              
-                            </div>
-                          </div>
-                        </div>
+                        <a class="btn btn-primary" href="{{ url('/register') }}">Register</a>
+                        <a class="btn btn-primary" href="{{ url('/login') }}">Login</a>
                       </div>
                     </div>
                 </header>
@@ -162,7 +120,7 @@
                             <a href="{{ url('/contact') }}" class="nav-link">Contact</a>
                         </li>
                         <li class="nav-item">
-                            <a href="{{ url('/edit') }}" class="nav-link">Insert</a>
+                            <a href="{{ url('/login') }}" class="nav-link">Insert</a>
                         </li>
                     </ul>
                   </div>
