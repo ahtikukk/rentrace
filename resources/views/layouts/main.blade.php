@@ -44,7 +44,7 @@
                   <div class="collapse navbar-collapse" id="navbarColor01">
                     <ul class="navbar-nav mr-auto">
                         <li class="nav-item">
-                            <a href="{{ url('/booking') }}" class="nav-link">Book a Car</a>
+                            <a href="{{ url('/') }}" class="nav-link">Book a Car</a>
                         </li>
                         <li class="nav-item">
                             <a href="{{ url('/result') }}" class="nav-link">Results</a>

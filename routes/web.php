@@ -15,22 +15,15 @@
 //     return redirect('/booking');
 // });
 
-Route::get('/', 'BookingController@index');
+//Route::get('/', 'BookingController@index');
 
-Route::get('/booking', function () {
-    return view('booking');
-});
+Route::get('/', 'CarsController@index');
 
-Route::get('/result', function () {
-    return view('result');
-});
-Route::get('/contact', function () {
-    return view('contact');
-});
-Route::get('/edit', function () {
-    return view('edit');
-})->middleware('auth');
+Route::get('/result', 'CarsController@result');
+Route::get('/contact', 'CarsController@contact');
+Route::get('/edit', 'CarsController@edit')->middleware('auth');
 
+Route::post('/save','CarsController@store')->name('save');
 
 Auth::routes();
 

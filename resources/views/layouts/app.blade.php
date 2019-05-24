@@ -82,7 +82,7 @@
     </div>
     <div class="container">
         
-        {{ Form::open(['url' => 'foo/bar', 'method' => 'put']) }}
+        {{ Form::open(['route' => 'save', 'method' => 'post']) }}
 
         {{ Form::label('time', 'Time', ['class' => 'control-label mt-3']) }}
         {{ Form::time('time', null, ['class' => 'form-control', 'placeholder' => 'Time']) }}

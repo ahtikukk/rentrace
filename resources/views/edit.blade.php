@@ -6,9 +6,9 @@
 
     <div class="container">
 
-        {{ Form::open(['url' => 'foo/bar']) }}
-            //
-        {{ Form::close() }}
+        <form action="" method="post">
+            
+        </form>
 
 
 
