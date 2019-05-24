@@ -74,10 +74,33 @@
                 </div>
             </div>
         </nav>
-
+        
         <main class="py-4">
             @yield('content')
         </main>
+        
     </div>
+    <div class="container">
+        
+        {{ Form::open(['url' => 'foo/bar', 'method' => 'put']) }}
+
+        {{ Form::label('time', 'Time', ['class' => 'control-label mt-3']) }}
+        {{ Form::time('time', null, ['class' => 'form-control', 'placeholder' => 'Time']) }}
+            
+        {{ Form::label('name', 'Name', ['class' => 'control-label mt-3']) }}
+        {{ Form::text('name', null, ['class' => 'form-control form-control-lg', 'placeholder' => 'Name']) }}
+
+        {{ Form::label('car', 'Car', ['class' => 'control-label mt-3']) }}
+        {{ Form::text('car', null, ['class' => 'form-control form-control-lg', 'placeholder' => 'Car']) }}
+
+        {{ Form::label('date', 'Date', ['class' => 'control-label mt-3']) }}
+        {{ Form::date('date', \Carbon\Carbon::now(), ['class' => 'form-control']) }}
+
+        {{ Form::submit('Submit', ['class' => 'btn btn-block btn-primary mt-3']) }}
+
+        {{ Form::close() }}
+    </div>
+    
+    
 </body>
 </html>

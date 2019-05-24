@@ -29,7 +29,7 @@ Route::get('/contact', function () {
 });
 Route::get('/edit', function () {
     return view('edit');
-});
+})->middleware('auth');
 
 
 Auth::routes();
